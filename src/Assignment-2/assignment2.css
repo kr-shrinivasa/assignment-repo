@@ -1,7 +1,134 @@
 /* Our CSS file. */
-
-
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* ----header and nav---- */
 .container, .content {
 width: 100%;
 height: 100%;
+}
+.logo{
+    width:20% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 25%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    height: 70px;
+}
+.nav-list{  
+    display:flex;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color:rgb(250, 244, 244);
+    font-size: 20px;
+
+
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color:rgb(20, 17, 15)
+
+}
+
+
+#name{
+    margin-right: 20px;
+    padding:5px;
+    font-size: 17px;
+    border: 2px solid rgb(19, 9, 9);
+    border-radius: 10px;
+}
+.baround{
+    
+    background-color: rgba(243, 236, 236, 0.7);
+    background-blend-mode: darken;
+}
+
+.navlists{
+    background-color:rgba(71, 67, 67, 0.6);
+    background-blend-mode: darken;
+}
+/* ----header and nav ends---- */
+
+/* ----main section---- */
+.main-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.lr{
+    flex-direction: column;
+    text-align: left;
+
+}
+
+.side{
+    width: 20%;
+    background: #406672;
+    
+}
+.middle{
+    width: 50%;
+    padding: 30px 0;
+    background: lightgray;
+}
+.image-box{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.singles{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: rgb(93, 214, 13);
+    position: relative;
+}
+.singles img{
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    opacity: 0;
+    transition: 1s;
+
+}
+.singles:hover .overlay{
+    opacity: 1;
+}
+#footer-page{
+    margin-top: 5px;
+    padding: 20px;
+    background-color: aliceblue;
+    
 }
